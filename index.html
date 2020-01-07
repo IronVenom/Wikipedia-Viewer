@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wikipedia Viewer</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/b385f29ce4.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+	<link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body>
+	<div class="ui text container center aligned">
+		<div class="ui huge brown header">Wikipedia Viewer</div>
+		<a href="https://en.wikipedia.org/wiki/Special:Random" class="ui orange button" target="_blank">Click here to see a random Wikipedia Article</a>
+		<div class = "ui medium brown header">Search a Wikipedia Article:</div>
+		<div class="ui search">
+		  <div class="ui icon input">
+		    <input class="prompt" type="text" placeholder="Search Article">
+		    <i class="search icon"></i>
+		  </div>
+		  <div class="ui red button" id="reset">Reset</div>
+		</div>
+		<div class="ui text container center aligned" id="searchqueries"></div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
