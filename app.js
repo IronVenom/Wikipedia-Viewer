@@ -14,7 +14,8 @@ $("input").on("keypress",function(event){
 				links.push(linksData[i])
 			}
 			for(var i = 0;i<links.length;i++){
-				$("#searchqueries").append('<div class="ui raised segment" id="searchitems"><a target="_blank" href="https://en.wikipedia.org/?curid=' + String(links[i].pageid) + '">' + links[i].title + '</a></div>');
+				var textInfo = links[i].snippet.replace( /(<([^>]+)>)/ig, '');
+				$("#searchqueries").append('<div class="ui raised segment hvr-grow" id="searchitems"><a target="_blank" href="https://en.wikipedia.org/?curid=' + String(links[i].pageid) + '">' + links[i].title + '</a><p>' + textInfo + '</p></div>');
 			}
 			ifQueried = true;
 		});
